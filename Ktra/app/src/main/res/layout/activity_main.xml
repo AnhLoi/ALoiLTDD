@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#009999"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:textSize="40sp"
+                android:textStyle="bold">
+            </TextView>
+        <TextView
+            android:textColor="#009999"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Please with email and sign up to continute"
+            android:textSize="15sp"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter vis social member"
+            android:textSize="15sp"
+            android:layout_marginLeft="120sp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/anh2">
+        </ImageView>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/anh3">
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or login with email">
+        </TextView>
+        <EditText
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_home_1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="vothianhloi60@gmail.com">
+        </EditText>
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="pass"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_check_24">
+        </EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I agree with profile"
+            android:drawableLeft="@drawable/ic_baseline_check_2">
+        </TextView>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/buttonstyleblue">
+        </Button>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You already have an scount?      Login"
+            android:textSize="16sp">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

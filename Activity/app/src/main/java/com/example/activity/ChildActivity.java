@@ -10,13 +10,13 @@ public class ChildActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child);
         Button btnBack= (Button)
-                findViewById(R.id.btnBacktoMainActivity);
+                findViewById(R.id.btnBackToMainActivity);
         btnBack.setOnClickListener(new
-             View.OnClickListener() {
-                  public void onClick(View v) {
-                       finish();
-                  }
-              });
+                                           View.OnClickListener() {
+                                               public void onClick(View v) {
+                                                   finish();
+                                               }
+                                           });
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
