@@ -31,8 +31,7 @@
         <ImageView
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/anh5">
+            android:layout_height="150dp">
         </ImageView>
         <TextView
             android:layout_marginTop="25dp"
@@ -51,13 +50,11 @@
         android:layout_height="200dp">
         <ImageView
             android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/anh2">
+            android:layout_height="110dp">
         </ImageView>
         <ImageView
             android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:src="@drawable/anh3">
+            android:layout_height="70dp">
         </ImageView>
 
     </LinearLayout>
@@ -77,8 +74,7 @@
             android:layout_height="wrap_content"
             android:text="Sign up"
             android:textStyle="bold"
-            android:textSize="20sp"
-            android:background="@drawable/buttonstyleblue">
+            android:textSize="20sp">
         </Button>
         <TextView
             android:textStyle="bold"
