@@ -1,42 +1,80 @@
-package com.example.chuyen;
+package com.example.ktra_lan2;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import java.util.List;
 
+public class GridViewAdapter  extends BaseAdapter {
 
-public class GridViewAdapter extends ArrayAdapter<Product> {
+    private List<Product> listData;
+    private LayoutInflater layoutInflater;
+    private Context context;
 
-    public GridViewAdapter(@NonNull Context context, int resource, @NonNull List<Product> objects) {
-        super(context, resource, objects);
+    public GridViewAdapter(Context aContext,  List<Product> listData) {
+        this.context = aContext;
+        this.listData = listData;
+        layoutInflater = LayoutInflater.from(aContext);
     }
-    @NonNull
+
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View v = convertView;
-        if (null == v){
-            LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            v = inflater.inflate(R.layout.grid_item, null);
-        }
-        Product product = getItem(position);
-        ImageView img = (ImageView) v.findViewById(R.id.imageView);
-        TextView txtTitle = (TextView) v.findViewById(R.id.txtTitle);
-        TextView txtDescription = (TextView) v.findViewById(R.id.txtDescription);
-
-        img.setImageResource(product.getImageId());
-        txtTitle.setText(product.getTitle());
-        txtDescription.setText(product.getDescription());
-
-        return v;
+    public int getCount() {
+        return listData.size();
     }
-}
 
+    @Override
+    public Object getItem(int position) {
+        return listData.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder;
+        if (convertView == null) {
+            convertView = layoutInflater.inflate(R.layout.grid_item, null);
+            holder = new ViewHolder();
+            holder.flagView = (ImageView) convertView.findViewById(R.id.imageView);
+            holder.countryNameView = (TextView) convertView.findViewById(R.id.txtTitle);
+            holder.populationView = (TextView) convertView.findViewById(R.id.txtDescription);
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+        }
+
+        Product country = this.listData.get(position);
+        holder.countryNameView.setText(country.getTitle());
+        holder.populationView.setText("" + country.getDescription());
+
+        int imageId = this.getMipmapResIdByName(country.getImageId());
+
+        holder.flagView.setImageResource(imageId);
+
+        return convertView;
+    }
+
+    // Find Image ID corresponding to the name of the image (in the directory mipmap).
+    public int getMipmapResIdByName(String resName)  {
+        String pkgName = context.getPackageName();
+
+        // Return 0 if not found.
+        int resID = context.getResources().getIdentifier(resName , "mipmap", pkgName);
+        Log.i("CustomGridView", "Res Name: "+ resName+"==> Res ID = "+ resID);
+        return resID;
+    }
+
+    static class ViewHolder {
+        ImageView flagView;
+        TextView countryNameView;
+        TextView populationView;
+    }
+
+}

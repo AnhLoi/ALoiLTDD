@@ -1,4 +1,4 @@
-package com.example.list_menu;
+package com.example.list_menu.Adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
+import com.example.list_menu.model.Product;
+import com.example.list_menu.R;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -30,7 +32,7 @@ public class ProductAdapter  extends ArrayAdapter {
         if (convertView == null)
         {
             LayoutInflater inflater = activity.getLayoutInflater();
-            convertView = inflater.inflate(R.layout.listitem_product, null);
+            convertView = inflater.inflate(R.layout.activity_product, null);
         }
         //lấy các textview trong mỗi view
         TextView tvProductName = (TextView)convertView

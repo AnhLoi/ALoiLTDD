@@ -1,18 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_id"
+            android:text="ID"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditView
+            android:layout_weight="1"
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_name"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditView
+            android:layout_weight="1"
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_toan"
+            android:text="Điểm tóan"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditView
+            android:layout_weight="1"
+            android:inputType="number"
+            android:id="@+id/et_toan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_li"
+            android:text="Điểm lí"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditView
+            android:layout_weight="1"
+            android:id="@+id/et_li"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_hoa"
+            android:text="Điểm hóa"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditView
+            android:layout_weight="1"
+            android:id="@+id/et_hoa"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_them"
+            android:text="THÊM"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_sua"
+            android:text="SỬA"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_xoa"
+            android:text="XÓA"/>
+
+    </LinearLayout>
+
+</LinearLayout>

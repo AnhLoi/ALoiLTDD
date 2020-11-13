@@ -13,6 +13,9 @@ import android.widget.ListView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.list_menu.Adapter.ProductAdapter;
+import com.example.list_menu.model.SaleManager;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,8 +36,15 @@ public class MainActivity extends AppCompatActivity {
         ArrayList products = saleManager.getProducts();
         adapter = new ProductAdapter(this, products);//khởi tạo adapter
         lv.setAdapter(adapter);//hiển lên listview
-        lv.setOnItemLongClickListener((AdapterView.OnItemLongClickListener) new ItemLongClickRemove());
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -49,12 +59,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
     }
     private class ItemLongClickRemove implements AdapterView.OnItemLongClickListener {
         @Override
@@ -81,6 +85,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     }
-
 
 }

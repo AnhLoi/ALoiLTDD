@@ -1,4 +1,4 @@
-package com.example.list_menu;
+package com.example.list_menu.model;
 
 public class Product {
     private String ProductName;

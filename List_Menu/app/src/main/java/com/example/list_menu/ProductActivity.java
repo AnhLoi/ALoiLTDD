@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.list_menu.model.Product;
+import com.example.list_menu.model.SaleManager;
+
 import java.text.DecimalFormat;
 
 
@@ -18,7 +22,7 @@ public class ProductActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listitem_product);
+        setContentView(R.layout.activity_product);
         //lấy các control trên layout
         txtProductName = (EditText)findViewById(R.id.txtProductName);
         txtUnit = (EditText)findViewById(R.id.txtUnit);
