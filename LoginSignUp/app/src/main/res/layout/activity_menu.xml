@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1_321"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Menu" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView5_321"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập số bàn và chọn món ăn bên dưới:"
+            android:textColor="#FA345C" />
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1_321"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số bàn:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/so_ban_nhap_321"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Số bàn từ bàn 01 đến bàn 10"
+                android:textSize="12sp"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1_321"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4_321"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="2.62"
+                android:background="#FFAC82"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="√"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView2_321"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="5.74"
+                android:background="#FFAC82"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Món"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView3_321"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:background="#FFAC82"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Giá"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView6_321"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.36"
+                android:background="#FFAC82"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Số phần"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon1_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon1_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon1_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon1_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon2_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon2_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon2_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon2_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon3_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon3_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon3_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon3_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon4_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon4_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon4_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon4_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon5_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon5_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon5_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon5_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon6_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon6"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon6_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon6_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon6_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon7_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon7"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon7_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon7_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon7_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/mon8_321"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:text="@string/mon8"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mon8_gia_321"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mon8_gia"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/mon8_so_phan_321"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_xac_nhan_321"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:onClick="Ham_xac_nhan_dat_mon"
+        android:text="Xác nhận đặt món"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

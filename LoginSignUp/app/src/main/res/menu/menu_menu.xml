@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dp.qlnh.Menu" >
+	
+    <item 
+        android:id="@+id/backhome"
+        android:title="Trang chính"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_back" />
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit" />
+    <item 
+        android:id="@+id/about"
+        android:title="@string/about" />
+
+</menu>

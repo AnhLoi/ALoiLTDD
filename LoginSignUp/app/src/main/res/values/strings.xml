@@ -1,3 +1,39 @@
+
 <resources>
-    <string name="app_name">LoginSignUp</string>
+
+<string name="error_field_required">This field is required</string>
+<string name="error_password_not_match">Password not match</string>
+<string name="app_name">Quản lý nhà hàng</string>
+<string name="hello_world">Hello world!</string>
+<string name="huong_dan">Vui lòng chọn chức năng bên dưới:</string>
+<string name="dat_mon">Đặt món</string>
+<string name="tinh_tien">Tính tiền</string>
+<string name="home">Trang chính</string>
+<string name="exit">Thoát</string>
+<string name="about">Thông tin</string>
+
+<string name="title_activity_menu">Menu</string>
+<string name="huong_dan_menu">Nhà hàng Ánh Lời xin kính chào quý khách. Vui lòng chọn chức năng bên dưới.</string>
+<string name="mon1">Thịt kho hột vịt</string>
+<string name="mon2">Xương heo hầm măng</string>
+<string name="mon3">Cá chép kho tương</string>
+<string name="mon4">Trứng ốp la</string>
+<string name="mon5">Đậu hủ chiên</string>
+<string name="mon6">Canh hủ qua nhồi thịt</string>
+<string name="mon7">Canh chua cá chuối</string>
+<string name="mon8">Xào thập cẩm</string>
+<string name="mon1_gia">20.000đ</string>
+<string name="mon2_gia">55.000đ</string>
+<string name="mon3_gia">60.000đ</string>
+<string name="mon4_gia">15.000đ</string>
+<string name="mon5_gia">8.000đ</string>
+<string name="mon6_gia">30.000đ</string>
+<string name="mon7_gia">35.000đ</string>
+<string name="mon8_gia">23.000đ</string>
+<string name="title_activity_confirm_menu">Xác nhận đặt món</string>
+<string name="title_activity_bill">Tính tiền</string>
+<string name="action_settings">Settings</string>
+<string name="title_activity_change_menu">Đổi bill</string>
+<string name="title_activity_confirm_change_menu">Xác nhận đổi món</string>
+
 </resources>

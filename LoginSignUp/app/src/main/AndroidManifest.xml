@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.loginsignup">
+    package="com.example.loginsignup"
+    android:versionCode="1"
+    android:versionName="1.0" >
 
     <application
         android:allowBackup="true"
@@ -9,14 +11,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signup_form"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Login_form">
+        <activity android:name=".Register_form"></activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Signin_form">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".ConfirmMenuActivity"
+            android:label="@string/title_activity_confirm_menu" >
+        </activity>
+        <activity
+            android:name=".BillActivity"
+            android:label="@string/title_activity_bill" >
+        </activity>
+        <activity
+            android:name=".ChangeMenuActivity"
+            android:label="@string/title_activity_change_menu" >
+        </activity>
+        <activity
+            android:name=".ConfirmChangeMenuActivity"
+            android:label="@string/title_activity_confirm_change_menu" >
         </activity>
     </application>
 

@@ -1,15 +1,14 @@
-package com.example.loginsignup;
+package com.example.quanly;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Signup_form extends AppCompatActivity {
+public class RegisterFormActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup_form);
-        getSupportActionBar().setTitle("Signup Form");
+        setContentView(R.layout.activity_register_form);
     }
 }
