@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".RegisterActivity">
+    <ProgressBar
+        android:id="@+id/progressLogin_321"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form_321"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_back_321"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:gravity="left"
+                android:text="Create New Account"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_name_321"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/editext"
+                android:elevation="16dp"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_email_321"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Email"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:elevation="16dp"
+                android:background="@drawable/editext"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edit_pass_321"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Password"
+                android:inputType="text"
+                android:elevation="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editext"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edit_phone_321"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Phone number"
+                android:inputType="text"
+                android:elevation="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editext"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/edit_date_321"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Date of birth"
+                android:inputType="text"
+                android:elevation="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/editext"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_Register_321"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button"
+                android:text="Continue"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

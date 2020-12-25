@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CUOIKY</string>
+    <string name="error_password_not_match">Password not match</string>
+    <string name="error_field_required">This field is required</string>
+</resources>
